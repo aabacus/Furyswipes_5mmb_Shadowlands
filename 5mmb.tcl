@@ -1023,8 +1023,8 @@ if { ($game == "shadow" || $game == "classic")} { help }
 while { ($game == "shadow" || $game == "classic")} {
 	after 1
 	#if { [mouse_buttons_pressed] } { continue }
-	5mmb_tilde #This cycles windows when tilde is pressed.
-	5mmb_update_keystate # Do not remove or move
+	5mmb_tilde ; #This cycles windows when tilde is pressed.
+	5mmb_update_keystate ; # Do not remove or move
 	#THESE KEY MONITORS ONLY WORK WHEN SCROLL LOCK IS ON!
 	5mmb_monitor -anypressed "2 5 !0x12" "switchwin dps"
 	5mmb_monitor -anypressed "3 !0x10 !0x12" "switchwin dps"
